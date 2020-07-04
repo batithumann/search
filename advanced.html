@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="links">
+            <ul>
+                <li><a href="index.html">Google Search</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Advanced Search</h3>
+            <div id="sep"></div>
+            <form action="https://google.com/search">
+                <table>
+                    <tr>
+                        <td>Find pages with...</td>
+                        <td></td>
+                        <td id="help">To do this in the search box.</td>
+                    </tr>
+                    <tr>
+                        <td><label for="all">all these words:</label></td>
+                        <td><input id="all" type="text" name="as_q" class="adv-input"></td>
+                        <td class="help">Type the important words: <span class="code">tri-colour rat terrier</span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="exact">this exact word or phrase:</label></td>
+                        <td><input id="exact" type="text" name="as_epq" class="adv-input"></td>
+                        <td class="help">Put exact words in quotes: <span class="code">"rat terrier"</span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="any">any of these words:</label></td>
+                        <td><input id="any" type="text" name="as_oq" class="adv-input"></td>
+                        <td class="help">Type <span class="code">OR</span> between all the words you want: <span class="code">miniature OR standard</span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="none">none of these words:</label></td>
+                        <td><input id="none" type="text" name="as_eq" class="adv-input"></td>
+                        <td class="help">Put a minus sign just before words that you don't want: <span class="code">-rodent, -"Jack Russell"</span></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="right"><input type="submit" value="Advanced Search" class="adv-submit"></td>
+                    </tr>
+                </table>
+                
+            </form>
+        </div>
+    </body>
+</html>
